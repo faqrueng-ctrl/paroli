@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Длина пароля (6 - 20):" />
+
+        <EditText
+            android:id="@+id/etLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Количество паролей (1 - 15):" />
+
+        <EditText
+            android:id="@+id/etCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Использовать символы:" />
+
+        <CheckBox
+            android:id="@+id/cbLowercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Строчные буквы (a-z)"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/cbUppercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заглавные буквы (A-Z)"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/cbDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цифры (0-9)"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/cbSpecialChars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Спец. символы (!@#$%^&amp;*)" />
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Сгенерировать" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+</ScrollView>
